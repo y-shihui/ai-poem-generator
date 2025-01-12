@@ -4,13 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="src/style.css" />
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <title>AI Poem Generator</title>
   </head>
   <body>
     <div class="container">
       <main>
         <h1>AI POEM GENERATOR</h1>
-        <form>
+        <form id="poemGenerator">
           <input
             class="searchbar"
             type="text"
@@ -20,16 +21,7 @@
           />
           <input class="submit-button" type="submit" />
         </form>
-        <div class="poem">
-          Hold fast to dreams<br />
-          For if dreams die<br />
-          Life is a broken-winged bird<br />
-          That cannot fly.<br />
-          Hold fast to dreams<br />
-          For when dreams go<br />
-          Life is a barren field<br />
-          Frozen with snow.
-        </div>
+        <div class="poem" id="poem"></div>
       </main>
 
       <footer>
